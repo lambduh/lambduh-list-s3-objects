@@ -1,6 +1,6 @@
 {
   "name": "lambduh-list-s3-objects",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Get a list of keys from S3 by Bucket, Prefix, and regex",
   "main": "index.js",
   "directories": {
