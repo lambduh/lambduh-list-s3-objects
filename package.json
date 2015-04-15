@@ -1,0 +1,38 @@
+{
+  "name": "lambduh-list-s3-objects",
+  "version": "0.1.0",
+  "description": "Get a list of keys from S3 by Bucket, Prefix, and regex",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "q": "^1.2.0",
+    "aws-sdk": "^2.1.23"
+  },
+  "devDependencies": {
+    "chai": "^2.2.0",
+    "gulp": "^3.8.11",
+    "gulp-mocha": "^2.0.1"
+  },
+  "scripts": {
+    "test": "`which gulp` mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lambduh/lambduh-list-s3-objects.git"
+  },
+  "keywords": [
+    "lambda",
+    "aws",
+    "list",
+    "objects",
+    "s3"
+  ],
+  "author": "Russell Matney <russell.matney@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lambduh/lambduh-list-s3-objects/issues"
+  },
+  "homepage": "https://github.com/lambduh/lambduh-list-s3-objects"
+}
