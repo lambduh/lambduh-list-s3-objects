@@ -29,6 +29,7 @@ module.exports = function(options) {
               return object.Key;
             }
           });
+          keys = keys.filter(function(v) { return v; });
         }
 
         def.resolve(keys);
