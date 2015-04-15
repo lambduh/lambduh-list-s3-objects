@@ -21,16 +21,17 @@ module.exports = function(options) {
         def.reject(err);
       } else {
 
-        var keys = data.Contents;
-        if (options.pattern) {
-          //TODO: pull in lambduh-validate api?
-          keys = keys.map(function(object) {
+        var keys = data.Contents.map(function(object) {
+          if (options.pattern) {
             if (options.pattern.test(object.Key)) {
+              //TODO: pull in lambduh-validate api?
               return object.Key;
             }
-          });
-          keys = keys.filter(function(v) { return v; });
-        }
+          } else {
+            return object.Key;
+          }
+        });
+        keys = keys.filter(function(v) { return v; });
 
         def.resolve(keys);
       }
