@@ -7,7 +7,7 @@ npm i --save lambduh-list-s3-objects
 
 # Usage
 
-```
+```javascript
 var list = require('lambduh-list-s3-objects')
 
 list({
